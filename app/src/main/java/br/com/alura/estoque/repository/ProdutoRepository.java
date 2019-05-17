@@ -109,7 +109,7 @@ public class ProdutoRepository {
         new BaseAsyncTask<>(() -> {
             dao.atualiza(produto);
             return produto;
-        }, callBack::whenSucessful) .execute();
+        }, callBack::whenSucessful).execute();
     }
 
     public void remove(Produto produtoRemovido, DataLoadedCallBack<Void> callBack) {
